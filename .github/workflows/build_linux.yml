@@ -77,7 +77,7 @@ jobs:
           cargo build --release --locked
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: tsukimi-${{ matrix.platform }}-linux
           path: |
